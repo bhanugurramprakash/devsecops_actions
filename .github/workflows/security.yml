@@ -1,5 +1,9 @@
 name: security
 on: push
+permissions:
+  security-events: write
+  actions: read
+  contents: read
 jobs:
   security:
     runs-on: ubuntu-latest
