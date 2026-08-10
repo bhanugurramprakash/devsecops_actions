@@ -12,5 +12,5 @@ jobs:
          languages: java
          build-mode: autobuild
      - name: codeql_analyse
-       uses: github/codeql-action/analyse@v4
+       uses: github/codeql-action/analyze@v4
        
