@@ -9,7 +9,7 @@ jobs:
      - name: codeql init
        uses: github/codeql-action/init@v4
        with:
-         languages: pyhton
+         languages: python
      - name: codeql analyze
        uses: github/codeql-action/analyze@v4
        
