@@ -1,6 +1,5 @@
-import os
-API_KEY = "12345-SECRET-KEY"   # flagged for secret exposure
-
-user_input = input("Enter command: ")
-
-os.system(user_input)
+import sqlite3
+conn = sqlite3.connect("test.db")
+cursor = conn.cursor()
+user_input = input("Enter username: ")
+cursor.execute("SELECT * FROM users WHERE name = '" + user_input + "'")
