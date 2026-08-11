@@ -1,5 +1,5 @@
-def hello(name):
-    return "Hello " + name
+import os
 
+user_input = input("Enter command: ")
 
-print(hello("Bhanu"))
+os.system(user_input)
