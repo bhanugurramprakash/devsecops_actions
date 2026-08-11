@@ -1,20 +1,16 @@
 name: security
 on: push
-permissions:
-  security-events: write
-  actions: read
-  contents: read
 jobs:
-  security:
+  sast:
     runs-on: ubuntu-latest
     steps:
-     - name: Git_checkout
+     - name: Git checkout
        uses: actions/checkout@v4
-     - name: codeql_init
+     - name: codeql init
        uses: github/codeql-action/init@v4
        with:
-         languages: python
-         
-     - name: codeql_analyse
+         languages: pyhton
+     - name: codeql analyze
        uses: github/codeql-action/analyze@v4
+       
        
